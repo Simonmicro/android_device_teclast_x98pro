@@ -1,5 +1,6 @@
 # Teclast x98 Pro Device Tree
 
+* Add this into `devices/teclast/x98pro`.
 * This has been tested with Android-x86 9!
 * You may need to patch the kernel driver for the touch input by yourself! For this just apply my patch inside the kernel tree:
 ```diff
