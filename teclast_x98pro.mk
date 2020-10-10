@@ -30,3 +30,13 @@ TARGET_SYSTEM_PROP += device/teclast/x98pro/system.prop
 #USE_SQUASHFS := 0
 #PRODUCT_COPY_FILES += \
 #    device/teclast/x98pro/custom_bootanimation.zip:system/media/bootanimation.zip
+    
+# Remove some test apps
+#LOCAL_OVERRIDES_PACKAGES := \
+#    RSSReader \
+#    TSCalibration2
+
+# Include opengapps (comment if not wanted)
+# include device/teclast/x98pro/gapps.mk
+
+# =======================CUSTOMEND
