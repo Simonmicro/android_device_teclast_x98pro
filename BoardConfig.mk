@@ -23,12 +23,4 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 512
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 
-
-# =======================CUSTOM
-
-TARGET_HAS_THIRD_PARTY_APPS := true
-SUPERUSER_EMBEDDED := false
-
-# =======================CUSTOMEND
-
 include device/generic/common/BoardConfig.mk
