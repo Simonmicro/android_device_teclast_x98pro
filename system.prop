@@ -1,0 +1,12 @@
+# ro.sf.lcd_density=480
+ro.config.vc_call_vol_steps=14
+ro.config.media_vol_steps=28
+
+# Not supported in newer versions of Android anymore (fixed inside goodix kernel driver source for Teclast x98 Pro)...
+# ro.sf.hwrotation=180
+
+# Fix screen rotation
+ro.iio.accel.x.opt_scale=-1
+ro.iio.accel.y.opt_scale=-1
+ro.iio.accel.z.opt_scale=-1
+ro.iio.accel.order=102
