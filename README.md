@@ -33,15 +33,13 @@ index f8dd416c89b2..7668174b62ed 100644
 
 ## How to compile it yourself
 ...just some commands...
-
 ```bash
 repo init -u git://git.osdn.net/gitroot/android-x86/manifest -b pie-x86 --partial-clone
 repo sync
 source build/envsetup.sh
 lunch
 ```
-
-Now build it with `m` or `m iso_img`!
+Add this device tree and now build it with `m` or `m iso_img`!
 
 ### Include OpenGapps
 Add OpenGapps to `.repo/manifests/andoid` -> https://github.com/opengapps/aosp_build
