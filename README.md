@@ -1,6 +1,6 @@
 # Teclast x98 Pro Device Tree
 
-* Add this into `devices/teclast/x98pro`.
+* Add this into `device/teclast/x98pro`.
 * This has been tested with Android-x86 9!
 * You may need to patch the kernel driver for the touch input by yourself! For this just apply my patch inside the kernel tree:
 ```diff
@@ -42,16 +42,17 @@ lunch
 Add this device tree and now build it with `m` or `m iso_img`!
 
 ### Include OpenGapps
-Add OpenGapps to `.repo/manifests/andoid` -> https://github.com/opengapps/aosp_build
+Add OpenGapps to `.repo/manifests/opengapps.xml` -> https://github.com/opengapps/aosp_build
+Then for every folder in `vendor/opengapps/sources` run the following:
+```bash
+git lfs install
+git lfs pull
+```
+An other quick resync with patches for https://github.com/opengapps/aosp_build/issues/257...
 ```bash
 repo sync
 curl https://github.com/cwhuang/aosp_build/commit/384cdac7930e7a2b67fd287cfae943fdaf7e5ca3.patch | git -C vendor/opengapps/build apply -v --index
 curl https://github.com/cwhuang/aosp_build/commit/3bb6f0804fe5d516b6b0bc68d8a45a2e57f147d5.patch | git -C vendor/opengapps/build apply -v --index
-```
-Then for every folder in vendor/opengapps/sources run the following:
-```bash
-git lfs install
-git lfs pull
 ```
 Also make sure to comment the gapps support from the device tree in... Now rebuild it and enjoy!
 _When you get uncertified errors (which should be fixed by the system.prop file in the tree): https://www.technobaboy.com/2020/03/07/how-to-fix-device-is-not-play-protect-certified/_
