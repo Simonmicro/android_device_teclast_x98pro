@@ -37,6 +37,6 @@ TARGET_SYSTEM_PROP += device/teclast/x98pro/system.prop
 #    TSCalibration2
 
 # Include opengapps (comment if not wanted)
-# include device/teclast/x98pro/gapps.mk
+#include device/teclast/x98pro/gapps.mk
 
 # =======================CUSTOMEND
