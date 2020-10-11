@@ -10,3 +10,13 @@ ro.iio.accel.x.opt_scale=-1
 ro.iio.accel.y.opt_scale=-1
 ro.iio.accel.z.opt_scale=-1
 ro.iio.accel.order=102
+
+# Mimic original device information, so the Google Play Store will work directly (https://forum.xda-developers.com/android/general/how-to-fix-google-play-store-t3673617)
+ro.product.brand=Teclast
+ro.product.manufacturer=Teclast
+ro.build.product=cht_ffd
+ro.product.model=X98 Pro (K9C6)
+ro.product.name=cht_ffd
+ro.product.device=cht_ffd
+ro.build.description=cht_ffd-userdebug 5.1 LMY47I 154 dev-keys
+ro.build.fingerprint=Teclast/cht_ffd/cht_ffd:5.1/LMY47I/154:userdebug/dev-keys
