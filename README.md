@@ -42,7 +42,7 @@ lunch
 Add this device tree and now build it with `m` or `m iso_img`!
 
 ### Include OpenGapps
-Add OpenGapps to `.repo/manifests/opengapps.xml` -> https://github.com/opengapps/aosp_build; an other quick resync...
+Add OpenGapps to `.repo/manifests/default.xml` (before the `</manifest>` tag) -> https://github.com/opengapps/aosp_build; an other quick resync...
 ```bash
 repo sync
 ```
